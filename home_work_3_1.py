@@ -7,8 +7,8 @@ def get_days_from_today(date = str) -> str:
     return (date_delta)
 
 while True:    
-    try:
-        input_data = input ('Введіть дату у вірному форматі РРРР-ММ-ДД: ')
+    try: # Перевірка помилки введення
+        input_data = input ('Введіть дату у форматі РРРР-ММ-ДД: ')
         your_date = get_days_from_today(input_data)
         print (f'Кількість днів між заданою датою і поточною датою складає {your_date}')
         break
