@@ -16,5 +16,5 @@ def normalize_phone(phone_number):
     return phone_number
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
-print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
+print("Normalized phone numbers for SMS sending:", sanitized_numbers)
      
